@@ -12,7 +12,7 @@ const Home = () => {
           </div>
         </Fade>
         <Fade right>
-          <div className="w-1/2 md:w-full sm:w-full">
+          <div className="w-1/2 md:w-full sm:w-ful">
             <div className="justify-center rounded-md flex bg-[#d2ef81] w-1/2 h-1/2">
               <p className="text-3xl text-center font-bold h-full w-full">
                 9/100
