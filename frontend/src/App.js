@@ -13,7 +13,7 @@ function App() {
   const [page, setPage] = useState(1);
 
   return (
-    <div className="App">
+    <div className="App w-screen h-screen">
       <Navbar setPage={setPage} page={page} />
       <Routes>
         <Route path="/" element={<Home />} />

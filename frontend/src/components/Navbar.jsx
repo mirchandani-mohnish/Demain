@@ -6,7 +6,7 @@ const Navbar = (props) => {
   console.log(props.page);
 
   return (
-    <nav className="w-screen h-40">
+    <nav className="w-full h-40">
       <div className="float-right">
         <a
           href="/suggestions"
@@ -16,12 +16,12 @@ const Navbar = (props) => {
           className="no-underline"
         >
           {props.page == 3 ? (
-            <div className=" navItem h-40 bg-yellow-300 p-5 font-bold rounded-b-md mx-4">
-              <p className=" text-center">Suggestion</p>
+            <div className=" navItem bg-[#d2ef81] p-5 font-bold rounded-b-md mx-4">
+              <p className=" text-center pt-16">Suggestion</p>
             </div>
           ) : (
-            <div className="navItem h-40 hover:bg-yellow-300 p-5 font-bold rounded-b-md mx-4">
-              <p className=" text-center">Suggestion</p>
+            <div className="navItem h-40 hover:bg-[#d2ef81] p-5 font-bold rounded-b-md mx-4">
+              <p className=" text-center pt-16">Suggestion</p>
             </div>
           )}
         </a>
@@ -35,12 +35,12 @@ const Navbar = (props) => {
           className="no-underline"
         >
           {props.page == 2 ? (
-            <div className="navItem h-40 bg-yellow-300 p-5 font-bold rounded-b-md mx-4">
-              <p className=" text-center">Feedback</p>
+            <div className="navItem h-40 bg-[#d2ef81] p-5 font-bold rounded-b-md mx-4">
+              <p className=" text-center pt-16">Feedback</p>
             </div>
           ) : (
-            <div className="navItem h-40 hover:bg-yellow-300 p-5 font-bold rounded-b-md mx-4">
-              <p className=" text-center">Feedback</p>
+            <div className="navItem h-40 hover:bg-[#d2ef81] p-5 font-bold rounded-b-md mx-4">
+              <p className=" text-center pt-16">Feedback</p>
             </div>
           )}
         </a>
@@ -54,12 +54,12 @@ const Navbar = (props) => {
           className="no-underline"
         >
           {props.page == 1 ? (
-            <div className="navItem h-40 bg-yellow-300 p-5 font-bold rounded-b-md mx-4">
-              <p className=" text-center">Home</p>
+            <div className="navItem h-40 bg-[#d2ef81] p-5 font-bold rounded-b-md mx-4">
+              <p className="text-center pt-16">Home</p>
             </div>
           ) : (
-            <div className="navItem h-40 hover:bg-yellow-300 p-5 font-bold rounded-b-md mx-4">
-              <p className=" text-center">Home</p>
+            <div className="navItem h-40 hover:bg-[#d2ef81] p-5 font-bold rounded-b-md mx-4">
+              <p className="text-center pt-16">Home</p>
             </div>
           )}
         </a>
