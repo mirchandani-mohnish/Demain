@@ -1,17 +1,18 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./css/Navbar.css";
 
 const Navbar = (props) => {
   console.log(props.page);
-  const [open, setOpen] = useState(false);
+
+  const [open, setOpen] = useState();
 
   if (window.innerWidth < 480) {
     if (open) {
       return (
-        <div className="w-full h-full bg-theme-green bg-opacity-50">
+        <div className="w-full h-screen bg-theme-green bg-opacity-50 z-10">
           <button className="w-10 h-10" onClick={() => setOpen(!open)}>
-            close
+            <p className="text-xl font-bold"> Close </p>
           </button>
 
           <div className="flex w-full h-full justify-center align-middle flex-col">
@@ -19,19 +20,19 @@ const Navbar = (props) => {
               href="/"
               className="w-full h-20 bg-theme-green rounded-lg py-4 m-2 bg-opacity-100"
             >
-              Home
+              <p className="text-xl font-bold"> Home </p>
             </a>
             <a
               href="/suggestion"
               className="w-full h-20 bg-theme-green rounded-lg py-4 m-2 bg-opacity-100"
             >
-              Suggestions
+              <p className="text-xl font-bold"> Suggestions </p>
             </a>
             <a
               href="/feedback"
               className="w-full h-20 bg-theme-green rounded-lg py-4 m-2 bg-opacity-100"
             >
-              Feedback
+              <p className="text-xl font-bold"> Feedback </p>
             </a>
           </div>
         </div>
