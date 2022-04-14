@@ -18,11 +18,13 @@ const getData = async () => {
 };
 
 const Home = () => {
+  const allCount = ["0"];
   useEffect(() => {
     getData()
       .then((dataReceived) => {
         const allCount = dataReceived;
         console.log(allCount);
+        console.log(allCount.at(-1).capacity);
       })
       .catch((e) => {
         console.log(e);
@@ -38,22 +40,14 @@ const Home = () => {
           </div>
         </Fade>
         <Fade right>
-          {/* <div className="w-1/2 md:w-full sm:w-ful">
+          <div className="w-1/2 md:w-full sm:w-ful">
             <div className="justify-center rounded-md flex bg-[#d2ef81] w-1/2 h-1/2">
               <p className="text-3xl text-center font-bold h-full w-full">
-                9/100
+                {allCount.at(-1).capacity}
               </p>
             </div>
-          </div> */}
+          </div>
         </Fade>
-      </div>
-      <div className="flex justify-between items-center w-full">
-        <div className="h-full">
-          <iframe
-            src="https://a8l1ihq6fk3uxyw.sg.qlikcloud.com/single/?appid=8289608d-9e61-436f-9881-7106d390b9b5&obj=JuJsP&opt=ctxmenu,currsel"
-            style={{ border: "none", width: "100%", height: "100%" }}
-          />
-        </div>
       </div>
     </div>
   );
