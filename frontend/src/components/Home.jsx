@@ -34,17 +34,19 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center w-full md:flex-row">
+      <div className="flex justify-between items-stretch w-full md:flex-row">
         <Fade left>
           <div className="justify-center w-1/2 md:w-full">
             <img src="/homeImg.png" alt="pizza-img" />
           </div>
         </Fade>
         <Fade right>
-          <div className="w-1/2 md:w-full sm:w-full">
-            <div className="justify-center rounded-lg flex bg-[#d2ef81] w-1/2 h-1/2">
-              <p className="text-3xl text-center font-bold h-full w-full md:text-lg">
-                The Current Capacity is <br /> {finalCount}
+          <div className="flex justify-center align-middle w-full md:p-20 md:w-full sm:w-full p-10">
+            <div className="flex justify-center rounded-lg bg-[#d2ef81] w-full">
+              <p className="text-3xl font-bold align-middle m-auto">
+                The Current Capacity: <br /> {finalCount} <br />
+                Chances of Getting a seat:
+                <br /> {100 - finalCount / 2}
               </p>
             </div>
           </div>
