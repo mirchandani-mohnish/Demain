@@ -11,8 +11,8 @@ import Suggestions from "./components/Suggestions";
 import Login from "./components/Login";
 
 function App() {
-  const [page, setPage] = useState(1);
-
+  const [page, setPage] = useState();
+  console.log(page);
   return (
     <div className="App w-screen h-screen">
       <Navbar setPage={setPage} page={page} />
