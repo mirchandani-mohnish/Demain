@@ -11,11 +11,7 @@ import Suggestions from "./components/Suggestions";
 import Login from "./components/Login";
 
 function App() {
-  // const [page, setPage] = useState();
-  const page = 1;
-  const setPage = (newPage) => {
-    page = newPage;
-  };
+  const [page, setPage] = useState();
 
   return (
     <div className="App w-screen h-screen">
