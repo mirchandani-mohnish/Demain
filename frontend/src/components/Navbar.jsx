@@ -69,11 +69,11 @@ const Navbar = (props) => {
           className="no-underline"
         >
           {props.page == 3 ? (
-            <div className=" navItem bg-[#d2ef81] font-bold p-2 md:p-5 md:rounded-b-md md:mx-4">
+            <div className="  bg-[#d2ef81] font-bold p-2 md:py-5 md:px-12 md:rounded-b-md md:mx-4">
               <p className=" text-center p-2 md:pt-16">Analytics</p>
             </div>
           ) : (
-            <div className="navItem hover:bg-[#d2ef81] font-bold p-2 md:p-5 md:rounded-b-md md:mx-4">
+            <div className=" hover:bg-[#d2ef81] font-bold p-2 md:py-5 md:px-12 md:rounded-b-md md:mx-4">
               <p className=" text-center p-2 md:pt-16">Analytics</p>
             </div>
           )}
@@ -88,12 +88,12 @@ const Navbar = (props) => {
           className="no-underline"
         >
           {props.page == 2 ? (
-            <div className=" navItem bg-[#d2ef81] font-bold p-2 md:p-5 md:rounded-b-md md:mx-4">
-              <p className=" text-center p-2 md:pt-16">Analytics</p>
+            <div className="  bg-[#d2ef81] font-bold p-2 md:py-5 md:px-12 md:rounded-b-md md:mx-4">
+              <p className=" text-center p-2 md:pt-16">Feedback</p>
             </div>
           ) : (
-            <div className="navItem hover:bg-[#d2ef81] font-bold p-2 md:p-5 md:rounded-b-md md:mx-4">
-              <p className=" text-center p-2 md:pt-16">Analytics</p>
+            <div className=" hover:bg-[#d2ef81] font-bold p-2 md:py-5 md:px-12 md:rounded-b-md md:mx-4">
+              <p className=" text-center p-2 md:pt-16">Feedback</p>
             </div>
           )}
         </a>
@@ -107,12 +107,12 @@ const Navbar = (props) => {
           className="no-underline"
         >
           {props.page == 1 ? (
-            <div className=" navItem bg-[#d2ef81] font-bold p-2 md:p-5 md:rounded-b-md md:mx-4">
-              <p className=" text-center p-2 md:pt-16">Analytics</p>
+            <div className="  bg-[#d2ef81] font-bold p-2 md:py-5 md:px-12 md:rounded-b-md md:mx-4">
+              <p className=" text-center p-2 md:pt-16">Home</p>
             </div>
           ) : (
-            <div className="navItem hover:bg-[#d2ef81] font-bold p-2 md:p-5 md:rounded-b-md md:mx-4">
-              <p className=" text-center p-2 md:pt-16">Analytics</p>
+            <div className=" hover:bg-[#d2ef81] font-bold p-2 md:py-5 md:px-12 md:rounded-b-md md:mx-4">
+              <p className=" text-center p-2 md:pt-16">Home</p>
             </div>
           )}
         </a>

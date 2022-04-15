@@ -34,17 +34,19 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-stretch w-full md:flex-row">
+      <div className="flex flex-wrap justify-between items-stretch w-full md:flex-nowrap">
         <Fade left>
-          <div className="justify-center w-1/2 md:w-full">
+          <div className="justify-center md:w-1/2 md:p-3 md:mx-auto">
             <img src="/homeImg.png" alt="pizza-img" />
           </div>
         </Fade>
         <Fade right>
-          <div className="flex justify-center align-middle w-full md:p-20 md:w-full sm:w-full p-10">
-            <div className="flex justify-center rounded-lg bg-[#d2ef81] w-full">
-              <p className="text-3xl font-bold align-middle m-auto">
+          <div className="flex justify-center align-middle w-full p-10 md:p-20 md:mx-auto md:w-1/2">
+            <div className="flex justify-center rounded-lg bg-[#d2ef81] w-full flex-col">
+              <p className="font-bold align-middle m-auto md:text-3xl">
                 The Current Capacity: <br /> {finalCount} <br />
+              </p>
+              <p className="font-bold align-middle m-auto md:text-3xl">
                 Chances of Getting a seat:
                 <br /> {100 - finalCount / 2}
               </p>
